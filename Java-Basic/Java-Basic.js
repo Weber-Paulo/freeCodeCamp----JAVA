@@ -15,6 +15,7 @@ var a;
 a = 7;
 var b;
 b = a;
+console.log(b)
 
 /* Defina uma variável a com var e a inicialize com o valor de 9.*/
 var a = 9;
@@ -33,3 +34,15 @@ var c = "I am a";
 console.log(a = a + 1);
 console.log(b = b + 5);
 console.log(c = c + " String!");
+
+/* Modifique as declarações e atribuições existentes para que seus nomes usem camelCase .
+Não crie novas variáveis.*/
+// Variable declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Variable assignments
+STUDLYCAPVAR = 10;
+PRoperCAmelCAse = "A String";
+tITLEcASEoVER = 9000;
