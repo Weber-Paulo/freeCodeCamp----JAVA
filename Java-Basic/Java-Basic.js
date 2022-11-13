@@ -46,3 +46,17 @@ var titleCaseOver;
 STUDLYCAPVAR = 10;
 PRoperCAmelCAse = "A String";
 tITLEcASEoVER = 9000;
+
+/*Atualize o código para que ele use apenas a palavra- letchave.*/
+let catName = "Oliver";
+let catSound = "Meow!";
+
+/*Altere o código para que todas as variáveis ​​sejam declaradas usando letou const. Use letquando quiser que a variável mude e constquando quiser que a variável permaneça constante. Além disso, renomeie as variáveis ​​declaradas com constpara estar em conformidade com as práticas comuns. Não altere as strings atribuídas às variáveis.*/
+const FCC = "freeCodeCamp"; // Change this line
+let fact = "is cool!"; // Change this line
+fact = "is awesome!";
+console.log(FCC, fact); // Change this line
+
+// Altere o 0para que a soma seja igual a 20
+const sum = 10 + 10;
+console.log(sum)
