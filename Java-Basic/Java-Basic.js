@@ -57,6 +57,37 @@ let fact = "is cool!"; // Change this line
 fact = "is awesome!";
 console.log(FCC, fact); // Change this line
 
-// Altere o 0para que a soma seja igual a 20
+// Altere o 0para que a soma seja igual a 20 (SOMAR).
 const sum = 10 + 10;
 console.log(sum)
+
+//Altere o 0para que a diferença seja 12 (SUBTRAIR).
+const difference = 45 - 33;
+console.log(difference)
+
+//Altere o 0para que o produto seja igual a 80 (MULTIPLICAR).
+const product = 8 * 10;
+console.log(product)
+
+//Altere o 0para que o quotientseja igual a 2 (DIVIDIR).
+const quotient = 66 / 33;
+console.log(quotient)
+
+/*Incrementar um número com JavaScript
+Altere o código para usar o operador ++ na variável myVar.*/
+let myVar = 87;
+myVar++;
+console.log(myVar)
+
+/*Decrementar um número com JavaScript
+Altere o código para usar o operador -- na variável myVar.*/
+let myVar1 = 11;
+myVar1--;
+console.log(myVar1)
+
+/*Criar números decimais com JavaScript
+Crie a variável myDecimal e dê a ela um valor decimal com uma parte fracional (e.g. 5.7).*/
+const ourDecimal = 5.7;
+var myDecimal = 5.7;
+console.log(myDecimal)
+
