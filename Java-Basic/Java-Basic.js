@@ -91,3 +91,54 @@ const ourDecimal = 5.7;
 var myDecimal = 5.7;
 console.log(myDecimal)
 
+/*Multiplicar dois decimais com JavaScript
+Altere o 0.0 para que o produto seja igual a 5.0.*/
+const product1 = 2.0 * 2.5;
+console.log(product1)
+
+/*Dividir um decimal por outro com JavaScript
+Modifique 0.0 para que a variável quotient seja igual a 2.2.*/
+const quotient1 = 4.4 / 2.0;
+console.log(quotient1)
+
+/* Descobrir o resto em JavaScript
+O operador de resto % retorna o resto da divisão de dois números.
+
+Exemplo
+
+5 % 2 = 1 porque
+Math.floor(5 / 2) = 2 (Quociente)
+2 * 2 = 4
+5 - 4 = 1 (Resto)
+Uso
+Na matemática, um número pode ser verificado como par ou ímpar por meio do resto da divisão do número por 2.
+
+17 % 2 = 1 (17 é Ímpar)
+48 % 2 = 0 (48 é Par)
+Observação: o operador de resto às vezes é referido incorretamente como o operador de módulo. É muito semelhante ao módulo, mas não funciona adequadamente com números negativos.
+
+Define o resto igual ao restante de 11 dividido por 3 usando o operador de restante (%).*/
+const remainder = 11 % 3;
+console.log(remainder)
+
+/*Atribuir de modo composto com adição aumentada
+Na programação, é comum usar atribuições para modificar o conteúdo de uma variável. Lembre-se de que tudo à direita do sinal de igual é avaliado primeiro, para que possamos dizer:
+
+myVar = myVar + 5;
+para adicionar 5 a myVar. Como este é um padrão tão comum, existem operadores que realizam uma operação matemática e atribuição em um passo.
+
+Um desses operadores é o operador +=.
+
+let myVar = 1;
+myVar += 5;
+console.log(myVar);
+6 seria exibido no console.
+
+Converta as atribuições para a, b e c para usar o operador +=.*/
+let a1 = 3;
+let b1 = 17;
+let c1 = 12;
+a1 += 12;
+b1 += 9;
+c1 += 7;
+console.log(a1,b1,c1)
