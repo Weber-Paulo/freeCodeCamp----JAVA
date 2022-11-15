@@ -142,3 +142,57 @@ a1 += 12;
 b1 += 9;
 c1 += 7;
 console.log(a1,b1,c1)
+
+/* Atribuir de modo composto com subtração aumentada
+Como o operador +=, -= subtrai um número de uma variável.
+
+myVar = myVar - 5;
+vai subtrair 5 de myVar. Essa expressão pode ser reescrita assim:
+
+myVar -= 5;
+Converta as atribuições para a, b e c para usar o operador +=.*/
+let a2 = 11;
+let b2 = 9;
+let c2 = 3;
+
+// Altere apenas o código abaixo desta linha
+a2 -= 6;
+b2 -= 15;
+c2 -= 1;
+console.log(a2,b2,c2)
+
+/*Atribuir de modo composto com multiplicação aumentada
+O operador *= multiplica uma variável por um número.
+
+myVar = myVar * 5;
+multiplicará myVar por 5. Essa expressão pode ser reescrita assim:
+
+myVar *= 5;
+Converta as atribuições para a, b e c para usar o operador *=.*/
+let a3 = 5;
+let b3 = 12;
+let c3 = 4.6;
+
+// Altere apenas o código abaixo desta linha
+a3 *= 5;
+b3 *= 3;
+c3 *= 10;
+console.log(a3,b3,c3)
+
+/*Atribuir de modo composto com divisão aumentada
+O operador /= divide uma variável por outro número.
+
+myVar = myVar / 5;
+dividirá myVar por 5. Essa expressão pode ser reescrita assim:
+
+myVar /= 5;
+Converta as atribuições para a, b e c para usar o operador /=.*/
+let a4 = 48;
+let b4 = 108;
+let c4 = 33;
+
+// Altere apenas o código abaixo desta linha
+a4 /= 12;
+b4 /= 4;
+c4 /= 11;
+console.log(a4,b4,c4)
