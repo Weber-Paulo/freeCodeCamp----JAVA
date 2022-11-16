@@ -196,3 +196,88 @@ a4 /= 12;
 b4 /= 4;
 c4 /= 11;
 console.log(a4,b4,c4)
+
+/*Escapar aspas literais em strings
+Quando você estiver definindo uma sequência de caracteres você deve iniciar e terminar com uma aspa simples ou dupla. O que acontece quando você precisa de uma aspa literal: " ou ' dentro de sua string?
+
+Em JavaScript, você pode escapar uma aspa para que não seja considerada como o fim de uma string ao colocar a barra invertida (\) na frente da aspa.
+
+const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+Isso sinaliza ao JavaScript que a aspa seguinte não é o fim de uma string, mas que deve aparecer dentro da string. Então, se você fosse imprimir isso no console, você obteria:
+
+Alan said, "Peter is learning JavaScript".
+Use barras invertidas para atribuir a string à variável myStr para que, se você fosse imprimi-la no console, veria:
+
+I am a "double quoted" string inside "double quotes".*/
+const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+console.log(myStr)
+
+/*Cercar uma string com aspas simples
+Valores de string em JavaScript podem ser escritas com aspas simples ou duplas, desde que você comece e termine com o mesmo tipo de aspas. Diferente de outras linguagens de programação, aspas simples e duplas funcionam da mesma forma em JavaScript.
+
+const doubleQuoteStr = "This is a string"; 
+const singleQuoteStr = 'This is also a string';
+O motivo pelo qual você pode querer usar um tipo de aspas no lugar da outra é se você vir a querer usar ambas em uma string. Isso pode acontecer se você quiser salvar uma conversa em uma string e ter a conversa entre aspas. Outro uso para isso seria salvar uma tag <a> com vários atributos em aspas, tudo dentro de uma string.
+
+const conversation = 'Finn exclaims to Jake, "Algebraic!"';
+Porém, isso se torna um problema se você precisar usar as aspas mais extremas dentro dela. Lembre-se, uma string tem o mesmo tipo de aspas no início e no final. Mas se você tem aquela mesma aspa em algum lugar no meio, a string vai terminar mais cedo e lançará um erro.
+
+const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"'; 
+const badStr = 'Finn responds, "Let's go!"';
+Aqui badStr lançará um erro.
+
+Na string goodStr acima, você pode usar ambas as aspas com segurança ao usar a barra invertida \ como um caractere de escapamento.
+
+Observação: a barra invertida \ não deve ser confundida com a barra comum /. Elas não fazem a mesma coisa.
+
+Altere a string fornecida para uma string com aspas simples no início e no final e sem caracteres de escapamento.
+
+Nesse momento, a tag <a> na string usa aspas duplas em todo canto. Você precisará alterar as aspas mais externas para aspas simples, para que você possa remover os caracteres de escapamento.*/
+const myStr1 = '<a href="http://www.example.com" target="_blank">Link</a>';
+console.log(myStr1)
+
+/*Escapar sequências em strings
+Aspas não são os únicos caracteres que podem ser escapados dentro de uma string. Há dois motivos para usar caracteres de escapamento:
+
+Para permitir que você use caracteres que você pode não ser capaz de digitar do contrário, como o caractere de nova linha.
+Para permitir que você represente várias aspas em uma string sem o JavaScript entender erroneamente o que você quis dizer.
+Aprendemos isso no desafio anterior.
+
+Código	Saída
+\'	aspas simples
+\"	aspas duplas
+\\	barra invertida
+\n	nova linha
+\t	tab
+\r	retorno de carro
+\b	limite de palavra
+\f	quebra de página
+Note que a própria barra invertida deve ser escapada para ser exibida como uma barra invertida.
+
+Atribua as três linhas de texto a seguir em uma única variável myStr usando sequências de escapamento.
+
+FirstLine
+    \SecondLine
+ThirdLine
+Você precisará usar sequências de escapamento para inserir corretamente os caracteres especiais. Você também precisará seguir os espaçamentos assim como acima, sem espaços entre sequências de escapamento ou palavras.
+
+Observação: a identação para SecondLine é alcançada com o caractere de espaçamento tab, e não com espaços.*/
+const myStr2 = "FirstLine\n\t\\SecondLine\nThirdLine";
+console.log(myStr2)
+
+/*Concatenar strings com o operador mais
+Em JavaScript, quando o operador + é usado com um valor de String, ele é chamado de operador de concatenação. Você pode criar uma nova string a partir de outras strings ao concatenar elas juntos.
+
+Exemplo
+
+'My name is Alan,' + ' I concatenate.'
+Observação: cuidado com os espaços. A concatenação não adiciona espaços entre strings concatenadas, então você mesmo precisará adicioná-las.
+
+Exemplo:
+
+const ourStr = "I come first. " + "I come second.";
+A string I come first. I come second. seria exibida no console.
+
+Crie myStr a partir das strings This is the start. e This is the end. usando o operador +. Não se esqueça de incluir um espaço entre as duas strings.*/
+const myStr3 = "This is the start. " + "This is the end.";
+console.log(myStr3)
