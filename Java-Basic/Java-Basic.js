@@ -297,3 +297,138 @@ Crie myStr em várias linhas concatenando essas duas strings: This is the first 
 let myStr4 = "This is the first sentence. ";
 myStr4 += "This is the second sentence.";
 console.log(myStr4)
+
+/*Criar strings com variáveis
+Às vezes, você precisará criar uma string. Usando o operador de concatenação (+), você pode inserir uma ou mais variáveis em uma string que você está criando.
+
+Exemplo:
+
+const ourName = "freeCodeCamp";
+const ourStr = "Hello, our name is " + ourName + ", how are you?";
+ourStr teria o valor da string Hello, our name is freeCodeCamp, how are you?.
+
+Defina myName para uma string igual ao seu nome e construa myStr com myName em duas strings: My name is e and I am well!*/
+const myName3 = "Paulo";
+const myStr5 = "My name is " + myName3 + " and I am well!";
+console.log(myStr5)
+
+/*Adicionar variáveis para strings
+Assim como podemos construir uma string em várias linhas através das strings literais, nós também podemos adicionar as variáveis para a string usando o operador mais igual (+=).
+
+Exemplo:
+
+const anAdjective = "awesome!";
+let ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+ourStr teria o valor freeCodeCamp is awesome!.
+
+Defina someAdjective para uma string de pelo menos 3 caracteres e adicione para myStr usando o operador +=.*/
+const someAdjective = "Special!";
+let myStr6 = "Learning to code is ";
+myStr6 += someAdjective;
+console.log(myStr6)
+
+/*Encontrar o tamanho de uma string
+Você pode encontrar o tamanho de um valor de String ao escrever .length após a variável de string ou literal de string.
+
+console.log("Alan Peter".length);
+O valor 10 seria exibido no console. Observe que o caractere de espaço entre "Alan" e "Peter" também é contado.
+
+Por exemplo, se nós criássemos uma variável const firstName = "Ada", poderíamos descobrir qual o tamanho da string Ada usando a propriedade firstName.length.
+
+Use a propriedade .length para definir lastNameLength como o número de caracteres em lastName.
+
+*/
+// Configuração
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Altere apenas o código abaixo desta linha
+lastNameLength = lastName.length;
+console.log(lastNameLength)
+
+/*Usar notação de colchetes para encontrar o primeiro caractere em uma string
+Notação de colchetes é uma forma de pegar um caractere no índice especificado dentro de uma string.
+
+A maioria das linguagens de programação modernas, como JavaScript, não começa contando do 1 como humanos fazem. Elas começam no 0. Isso é referido como indexação baseada em zero.
+
+Por exemplo, o caractere no índice 0 da palavra Charles é C. Então, se const firstName = "Charles", você pode pegar o valor da primeira letra da string usando firstName[0].
+
+Exemplo:
+
+const firstName = "Charles";
+const firstLetter = firstName[0];
+firstLetter teria o valor da string C.
+
+Use notação de colchetes para encontrar o primeiro caractere na variável lastName e atribua a letra para a variável firstLetterOfLastName.
+
+Dica: tente olhar o exemplo acima se você ficar travado.*/
+// Configuração
+let firstLetterOfLastName = "";
+const lastName1 = "Lovelace";
+
+// Altere apenas o código abaixo desta linha
+firstLetterOfLastName = lastName1[0]; // Altere esta linha
+console.log(firstLetterOfLastName)
+
+/*Entender a imutabilidade das strings
+Em JavaScript, valores String são imutáveis, o que significa que elas não podem ser alteradas após serem criadas.
+
+Por exemplo, o código a seguir produzirá um erro porque a letra B na cadeia de caracteres Bob não pode ser alterada para a letra J:
+
+let myStr = "Bob";
+myStr[0] = "J";
+Observe que isso não significa que myStr não possa ser reatribuída. A única forma de alterar myStr seria atribuindo a ela um novo valor, deste modo:
+
+let myStr = "Bob";
+myStr = "Job";
+Corrija a atribuição para myStr para que contenha o valor Hello World (string) usando a abordagem mostrada no exemplo acima.*/
+// Configuração
+let myStr7 = "Jello World";
+
+// Altere apenas o código abaixo desta linha
+myStr7 = "Hello World"; // Altere esta linha
+// Altere apenas o código acima desta linha
+console.log(myStr7)
+
+/*Usar notação de colchetes para encontrar o enésimo caractere em uma string
+Você também pode usar notação de colchetes para pegar caracteres em outras posições em uma string.
+
+Lembre-se de que computadores começam contando do 0. Então, o primeiro caractere é na verdade o caractere na posição 0.
+
+Exemplo:
+
+const firstName = "Ada";
+const secondLetterOfFirstName = firstName[1];
+secondLetterOfFirstName teria o valor da string d.
+
+Vamos tentar definir thirdLetterOfLastName para ser igual a terceira letra da variável lastName usando notação de colchetes.
+
+Dica: tente olhar o exemplo acima se você ficar travado.*/
+// Configuração
+const lastName2 = "Lovelace";
+
+// Altere apenas o código abaixo desta linha
+const thirdLetterOfLastName = lastName2[2]; // Altere esta linha
+console.log(thirdLetterOfLastName)
+
+/*Usar notação de colchetes para encontrar o último caractere em uma string
+Para pegar a última letra de uma string, você pode subtrair um do tamanho da string.
+
+Por exemplo, se const firstName = "Ada", você pode pegar o valor da última letra da string ao usar firstName[firstName.length - 1].
+
+Exemplo:
+
+const firstName = "Ada";
+const lastLetter = firstName[firstName.length - 1];
+lastLetter teria o valor da string a.
+
+Use notação de colchetes para descobrir o último caractere na variável lastName.
+
+Dica: tente olhar o exemplo acima se você ficar travado.*/
+// Configuração
+const lastName3 = "Lovelace";
+
+// Altere apenas o código abaixo desta linha
+const lastLetterOfLastName = lastName3[lastName.length - 1]; // Altere esta linha
+console.log(lastLetterOfLastName)
