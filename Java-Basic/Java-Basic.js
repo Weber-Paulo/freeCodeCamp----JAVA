@@ -453,3 +453,24 @@ const lastName4 = "Lovelace";
 // Altere apenas o código abaixo desta linha
 const secondToLastLetterOfLastName = lastName4[lastName.length -2]; // Altere esta linha
 console.log(secondToLastLetterOfLastName)
+
+/*Palavras em branco
+Você recebe frases com algumas palavras que faltam, como substantivos, verbos, adjetivos e advérbios. Em seguida, você preenche as peças que faltam com palavras de sua escolha de forma que a frase completa faça sentido.
+
+Considere esta frase - Foi realmente ____ , e nós ____ nós mesmos ____ . Esta frase tem três peças faltando - um adjetivo, um verbo e um advérbio, e podemos adicionar palavras de nossa escolha para completá-la. Podemos então atribuir a frase completa a uma variável da seguinte maneira:
+
+const sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves " + "silly" + ".";
+Neste desafio, fornecemos um substantivo, um verbo, um adjetivo e um advérbio. Você precisa formar uma frase completa usando palavras de sua escolha, junto com as palavras que fornecemos.
+
+Você precisará usar o operador de concatenação de strings +para criar uma nova string, usando as variáveis ​​fornecidas: myNoun, myAdjective, myVerbe myAdverb. Você então atribuirá a string formada à wordBlanksvariável. Você não deve alterar as palavras atribuídas às variáveis.
+
+Você também precisará levar em conta os espaços em sua string, para que a frase final tenha espaços entre todas as palavras. O resultado deve ser uma frase completa.*/
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Altere apenas o código abaixo desta linha
+const wordBlanks = "My "+myNoun+", and we "+myVerb+" comer "+myAdjective+" muito "+myAdverb+"."; // Altere esta linha
+// Altere apenas o código acima desta linha
+console.log(wordBlanks)
