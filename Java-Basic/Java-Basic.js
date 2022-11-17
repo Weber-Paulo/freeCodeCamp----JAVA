@@ -281,3 +281,19 @@ A string I come first. I come second. seria exibida no console.
 Crie myStr a partir das strings This is the start. e This is the end. usando o operador +. Não se esqueça de incluir um espaço entre as duas strings.*/
 const myStr3 = "This is the start. " + "This is the end.";
 console.log(myStr3)
+
+/*Concatenar strings com o operador mais igual
+Também podemos usar o operador += para concatenar uma string no final de uma variável string existente. Isso pode ser muito útil para quebrar uma longa string em várias linhas.
+
+Observação: cuidado com os espaços. A concatenação não adiciona espaços entre strings concatenadas, então você mesmo precisará adicioná-los.
+
+Exemplo:
+
+let ourStr = "I come first. ";
+ourStr += "I come second.";
+ourStr agora deve ter como valor a string I come first. I come second..
+
+Crie myStr em várias linhas concatenando essas duas strings: This is the first sentence. e This is the second sentence. usando o operador +=. Use o operador += de modo semelhante a como ele é mostrado no exemplo e certifique-se de incluir um espaço entre as duas strings. Comece atribuindo o primeiro texto para myStr, e então adicione o segundo texto.*/
+let myStr4 = "This is the first sentence. ";
+myStr4 += "This is the second sentence.";
+console.log(myStr4)
