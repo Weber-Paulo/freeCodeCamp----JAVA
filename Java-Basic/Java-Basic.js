@@ -484,3 +484,14 @@ const sandwich = ["peanut butter", "jelly", "bread"];
 Modifique o novo array myArray para que contenha uma string e um número (nessa ordem).*/
 const myArray = ["big bang", 123];
 console.log(myArray)
+
+/*Aninhar um array em outro array
+Você também pode aninhar arrays dentro de outros arrays, como abaixo:
+
+const teams = [["Bulls", 23], ["White Sox", 45]];
+Isso é chamado um array multidimensional.
+
+Crie um array aninhado chamado de myArray.*/
+// Altere apenas o código abaixo desta linha
+const myArray2 = [["Bulls, 23"], ["white Sox", 45]];
+console.log(myArray2)
