@@ -532,3 +532,77 @@ const myArray4 = [18, 64, 99];
 // Altere apenas o código abaixo desta linha
 myArray4[0] = 45;
 console.log(myArray4)
+
+/*Acessar arrays multidimensionais com índices
+Uma maneira de pensar em um array multidimensional é como um array de arrays. Quando você usa colchetes para acessar seu array, o primeiro conjunto de colchetes se refere às entradas no array mais exterior (o primeiro nível), e cada par adicional de colchetes refere-se ao próximo nível de entradas interno.
+
+Exemplo
+
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14]
+];
+
+const subarray = arr[3];
+const nestedSubarray = arr[3][0];
+const element = arr[3][0][1];
+Neste exemplo, subarray tem o valor de [[10, 11, 12], 13, 14], nestedSubarray tem o valor de [10, 11, 12] e element tem o valor de 11 .
+
+Observação: não deve haver nenhum espaço entre o nome do array e os colchetes como array [0][0] e até mesmo array [0] [0] não é permitido. Embora JavaScript seja capaz de processar isso corretamente, isso pode confundir outros programadores lendo seu código.
+
+Utilizando notação de colchetes, selecione um elemento de myArray de forma que myData seja igual a 8.*/
+const myArray5 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14],
+  ];
+  
+  const myData1 = myArray5[2][1];
+  console.log(myData1)
+
+  /*Manipular arrays com push()
+Uma forma fácil de adicionar dados no final de um array é através da função push().
+
+.push() recebe um ou mais parâmetros e "empurra" eles no final do array.
+
+Exemplos:
+
+const arr1 = [1, 2, 3];
+arr1.push(4);
+
+const arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);
+arr1 agora tem o valor de [1, 2, 3, 4] e arr2 tem o valor de ["Stimpson", "J", "cat", ["happy", "joy"]].
+
+Empurre ["dog", 3] para o final da variável myArray.*/
+// Configuração
+const myArray6 = [["John", 23], ["cat", 2]];
+
+// Altere apenas o código abaixo desta linha
+myArray6.push(["dog", 3])
+console.log(myArray6)
+
+/*Manipular arrays com pop()
+Outra forma de alterar os dados em um array é com a função .pop().
+
+.pop() é usado para remover um valor do final do array. Nós podemos armazenar esse valor removido atribuindo-o a uma variável. Em outras palavras, .pop() remove o último elemento de um array e retorna aquele elemento.
+
+Qualquer tipo de entrada pode ser removida de um array - numbers, strings e até mesmo arrays aninhados.
+
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+O primeiro console.log exibirá o valor 6 e o segundo exibirá o valor [1, 4].
+
+Use a função .pop() para remover o último item de myArray e atribuir o valor removido para uma nova variável, removedFromMyArray.*/
+// Configuração
+const myArray7 = [["John", 23], ["cat", 2]];
+
+// Altere apenas o código abaixo desta linha
+const removedFromMyArray = myArray7.pop();
+console.log(myArray7);
+console.log(removedFromMyArray)
