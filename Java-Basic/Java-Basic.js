@@ -606,3 +606,54 @@ const myArray7 = [["John", 23], ["cat", 2]];
 const removedFromMyArray = myArray7.pop();
 console.log(myArray7);
 console.log(removedFromMyArray)
+
+/*Manipular arrays com shift()
+pop() sempre remove o último elemento de um array. E se você quiser remover o primeiro?
+
+É aí que o .shift() vem a ser útil. Ele funciona da mesma forma que .pop(), exceto que ele remove o primeiro elemento ao invés do último.
+
+Exemplo:
+
+const ourArray = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray = ourArray.shift();
+removedFromOurArray teria o valor da string Stimpson e ourArray teria o valor de ["J", ["cat"]].
+
+Use a função .shift() para remover o primeiro item de myArray e atribuir o valor removido para uma nova variável, removedFromMyArray.*/
+// Configuração
+const myArray8 = [["John", 23], ["dog", 3]];
+
+// Altere apenas o código abaixo desta linha
+const removedFromMyArray2 = myArray8.shift()
+console.log(myArray8)
+console.log(removedFromMyArray2)
+
+/*Manipular arrays com unshift()
+Você pode não apenas usar shift para remover elementos do início de um array, como também pode usar unshift para adicionar elementos ao início de um array, ou seja, adicionar elementos na posição inicial do array.
+
+.unshift() funciona exatamente como .push(), mas, ao invés de adicionar o elemento ao final do array, unshift() adiciona o elemento no início do array.
+
+Exemplo:
+
+const ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();
+ourArray.unshift("Happy");
+Após o shift, ourArray teria o valor ["J","cat"]. Após o unshift, ourArray teria o valor ["Happy","J","cat"].
+
+Adicione ["Paul", 35] ao início da variável myArray usando unshift().*/
+// Configuração
+const myArray9 = [["John", 23], ["dog", 3]];
+myArray9.shift();
+
+// Altere apenas o código abaixo desta linha
+myArray9.unshift(["Paul", 35])
+console.log(myArray9)
+
+/*Criar lista de compras
+Crie uma lista de compras na variável myList. A lista deve ser um array multidimensional contendo diversos sub-arrays.
+
+O primeiro elemento em cada sub-array deve conter uma string com o nome do item. O segundo elemento deve ser um número representando a quantidade, ou seja,
+
+["Chocolate Bar", 15]
+Deve haver pelo menos 5 sub-arrays na lista.*/
+const myList = [["Chocolate Bar", 15], ["Bread", 30], ["Juice", 10], ["Grape", 5], ["Computer", 2]];
+console.log(myList)
