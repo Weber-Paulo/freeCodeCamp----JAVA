@@ -688,3 +688,8 @@ Então podemos chamar o testFun dessa forma: testFun("Hello", "World");. Passamo
 
 Crie uma função chamada functionWithArgs que aceita dois argumentos e exibe seus valores no console de desenvolvimento.
 Chame a função com dois números como argumentos.*/
+function functionWithArgs(Args1, Args2) {
+  console.log (Args1 + Args2);
+}
+functionWithArgs(1,2);
+functionWithArgs(7,9)
