@@ -816,7 +816,7 @@ addSum é uma função sem uma instrução return. A função vai alterar a vari
 
 Crie uma função addFive sem qualquer argumento. Essa função adiciona 5 à variávelsum, mas o valor retornado é undefined.*/
 // Configuração
-let sum = 0;
+let sum1 = 0;
 
 function addThree() {
   sum = sum + 3;
