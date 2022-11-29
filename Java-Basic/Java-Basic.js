@@ -851,3 +851,165 @@ function processArg(num) {
 // Only change code below this line
 processed = processArg(7);
 console.log(processed)
+
+/*Ficar na linha
+Na Ciência da Computação, uma fila é uma estrutura de dados abstrata onde itens são mantidos em ordem. Novos itens podem ser adicionados no final da fila e itens mais antigos são removidos do início da fila.
+
+Escreva a função nextInLine, que recebe um array (arr) e um número (item) como argumentos.
+
+Adicione o número no final do array e então remova o primeiro elemento do array.
+
+A função nextInLine deve, em seguida, retornar o elemento que foi removido.*/
+function nextInLine(arr, item) {
+  // Only change code below this line
+  console.log("** arr:", arr);
+  console.log("** item:", item);
+  arr.push(item);
+  console.log("** arr after pushing:", arr);
+  let removed = arr.shift();
+  console.log("** element removed:", removed);
+  return removed;
+  // Only change code above this line
+}
+
+// Setup
+const testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+/*Entender valores booleanos
+Outro tipo de dado é o booleano. Booleanos podem ser apenas dois valores: true ou false. Eles basicamente são interruptores pequenos, onde true é ligado e false é desligado. Esses dois estados são mutuamente exclusivos.
+
+Observação: valores booleanos nunca são escritos com aspas. As strings "true" e "false" não são booleanos e não tem nenhum significado especial em JavaScript.
+
+Modifique a função welcomeToBooleans para que retorne true ao invés de false quando o botão de executar for clicado.*/
+function welcomeToBooleans() {
+  // Altere apenas o código abaixo desta linha
+
+  return true; // Altere esta linha
+
+  // Altere apenas o código acima desta linha
+}
+
+/*Usar lógica condicional com instruções if
+instruções if são usadas para tomar decisões no código. A palavra-chave if diz ao JavaScript para executar o código nas chaves sob certas condições, definidas nos parênteses. Essas condições são conhecidas como condições Boolean e elas só podem ser true ou false.
+
+Quando a condição for true, o programa executará as instruções dentro das chaves. Quando a condição booleana for false, as instruções dentro das chaves não serão executadas.
+
+Pseudocódigo
+
+if (condição é verdadeira) {
+instrução é executada
+}
+Exemplo
+
+function test (myCondition) {
+  if (myCondition) {
+    return "It was true";
+  }
+  return "It was false";
+}
+
+test(true);
+test(false);
+test(true) retorna a string It was true e test(false) retorna a string It was false.
+
+Quando test é chamado com o valor true, a instrução if avalia myCondition para verificar se é true ou não. Já que é true, a função retorna It was true. Quando chamamos test com um valor de false, myCondition não é true, a instrução nas chaves não é executada e a função retorna It was false.
+
+Crie uma instrução if dentro da função para retornar Yes, that was true se o parâmetro wasThatTrue for true e retorne No, that was false caso contrário.*/
+function trueOrFalse(wasThatTrue) {
+  // Altere apenas o código abaixo desta linha
+if (wasThatTrue) {
+  return "Yes, that was true"
+}
+return "No, that was false"
+
+
+  // Altere apenas o código acima desta linha
+
+}
+
+
+/*Comparar com o operador de igualdade
+Há muitos operadores de comparação em JavaScript. Todos esses operadores retornam um valor booleano true ou false.
+
+O operador mais básico é o operador de igualdade ==. O operador de igualdade compara dois valores e retorna true se eles são equivalentes ou false se não são. Observe que o operador de igualdade é diferente do operador de atribuição (=), que atribui o valor à direita do operador para uma variável à esquerda.
+
+function equalityTest(myVal) {
+  if (myVal == 10) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+Se myVal é igual a 10, o operador de igualdade retorna true, assim o código nas chaves será executado e a função retornará Equal. Caso contrário, a função retornará Not Equal. Para que o JavaScript possa comparar dois tipos de dados diferentes (por exemplo, numbers e strings), deve converter um tipo para outro. Isto é conhecido como coerção de tipo (casting ou type coercion). No entanto, uma vez que a faça, você pode comparar os termos da seguinte forma:
+
+1   ==  1  // true
+1   ==  2  // false
+1   == '1' // true
+"3" ==  3  // true
+Adicione o operador de igualdade à linha indicada para que a função retorne a string Equal quando val for equivalente a 12.*/
+// Configuração
+function testEqual(val) {
+  if (val == 12) { // Altere esta linha
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+console.log(testEqual(10));
+console.log(testEqual(12));
+console.log(testEqual("12"));
+
+/*Comparar com o operador de igualdade estrita
+Igualdade estrita (===) é a contrapartida do operador de igualdade (==). No entanto, ao contrário do operador de igualdade, que tenta converter ambos os valores em comparação a um tipo comum, o operador estrito de igualdade não realiza uma conversão de tipo.
+
+Se os valores que são comparados tiverem valores diferentes, são considerados desiguais, e o operador de igualdade estrito retornará falso.
+
+Exemplos
+
+3 ===  3  // true
+3 === '3' // false
+No segundo exemplo, 3 é um tipo de Number e '3' é um tipo String.
+
+Use o operador de igualdade estrita na instrução if, para que a função retorne a string Equal quando val for estritamente igual a 7.*/
+// Configuração
+function testStrict(val) {
+  if (val === 7) { // Altere esta linha
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+console.log(testStrict(10));
+console.log(testStrict(7));
+
+/*Praticar a comparação de diferentes valores
+Nos últimos dois desafios, aprendemos sobre o operador de igualdade (==) e o operador de igualdade estrita (===). Vamos fazer uma breve revisão e praticar usando esses operadores mais uma vez.
+
+Se os valores sendo comparados não são do mesmo tipo, o operador de igualdade fará a conversão de tipo e, então, avaliará os valores. No entanto, o operador de igualdade estrita vai comparar ambos os tipos de dados e os valores, sem converter de um tipo para outro.
+
+Exemplos
+
+3 == '3' retorna true porque JavaScript faz a conversão de tipo de string para número. 3 === '3' retorna false porque os tipos são diferentes e não é feita a conversão de tipo.
+
+Observação: em JavaScript, você pode determinar o tipo de uma variável ou de um valor, com o operador typeof, como vemos a seguir:
+
+typeof 3
+typeof '3'
+typeof 3 retorna a string number e typeof '3' retorna a string string.
+
+A função compareEquality no editor compara dois valores usando o operador de igualdade. Modifique a função para que ela retorne a string Equal apenas quando os valores forem estritamente iguais.*/
+// Configuração
+function compareEquality(a, b) {
+  if (a === b) { // Altere esta linha
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+console.log(compareEquality(10, "10"));
+console.log(compareEquality("20", 20));
+console.log(compareEquality("5", "5"));
