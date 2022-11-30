@@ -1013,3 +1013,52 @@ function compareEquality(a, b) {
 console.log(compareEquality(10, "10"));
 console.log(compareEquality("20", 20));
 console.log(compareEquality("5", "5"));
+
+/*Comparar com o operador de desigualdade
+O operador de desigualdade (!=) é o oposto do operador de igualdade. Significa que não é igual e retorna false onde a igualdade retornaria true e vice-versa. Tal como o operador de igualdade, o operador de desigualdade converterá os tipos de dados de valores enquanto compara.
+
+Exemplos
+
+1 !=  2    // true
+1 != "1"   // false
+1 != '1'   // false
+1 != true  // false
+0 != false // false
+Adicione o operador de desigualdade != na instrução if para que a função retorne a string Not Equal quando val não for equivalente a 99.*/
+
+// Configuração
+function testNotEqual(val) {
+  if (val != 99) { // Altere esta linha
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+console.log(testNotEqual(10));
+console.log(testNotEqual(99));
+console.log(testNotEqual("99"));
+console.log(testNotEqual(12));
+console.log(testNotEqual("12"));
+
+/*Comparar com o operador de desigualdade estrita
+O operador de desigualdade estrito (!==) é o oposto lógico do operador de igualdade estrito. Significa que "não é estritamente igual" e retorna false onde a igualdade estrita retornaria true e vice-versa. O operador de desigualdade estrita não converterá tipos de dados.
+
+Exemplos
+
+3 !==  3  // false
+3 !== '3' // true
+4 !==  3  // true
+Adicione o operador de desigualdade estrita ao comando if para que a função retorne a string Not Equal quando val não é estritamente igual a 17*/
+
+// Configuração
+function testStrictNotEqual(val) {
+  if (val !== 17) { // Altere esta linha
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+console.log(testStrictNotEqual(17));
+console.log(testStrictNotEqual("17"));
+console.log(testStrictNotEqual(12));
+console.log(testStrictNotEqual(bob));
