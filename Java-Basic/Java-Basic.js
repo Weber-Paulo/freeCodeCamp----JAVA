@@ -1061,4 +1061,4 @@ function testStrictNotEqual(val) {
 console.log(testStrictNotEqual(17));
 console.log(testStrictNotEqual("17"));
 console.log(testStrictNotEqual(12));
-console.log(testStrictNotEqual(bob));
+console.log(testStrictNotEqual("bob"));
