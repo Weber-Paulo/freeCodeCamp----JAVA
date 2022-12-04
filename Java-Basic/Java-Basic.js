@@ -1090,3 +1090,56 @@ function testGreaterThan(val) {
 
 testGreaterThan(10);
 console.log(testGreaterThan(10))
+
+/*Comparação com o operador maior ou igual a
+O operador maior ou igual a ( >=) compara os valores de dois números. Se o número à esquerda for maior ou igual ao número à direita, ele retornará true. Caso contrário, ele retorna false.
+
+Como o operador de igualdade, o operador maior ou igual a converterá os tipos de dados durante a comparação.
+
+Exemplos
+
+6   >=  6  // true
+7   >= '3' // true
+2   >=  3  // false
+'7' >=  9  // false
+Adicione o operador maior ou igual às linhas indicadas para que as instruções de retorno façam sentido.*/
+
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
+
+/*Comparação com o operador menor que
+O operador menor que ( <) compara os valores de dois números. Se o número à esquerda for menor que o número à direita, ele retornará true. Caso contrário, ele retorna false. Como o operador de igualdade, o operador menor que converte tipos de dados durante a comparação.
+
+Exemplos
+
+2   < 5 // true
+'3' < 7 // true
+5   < 5 // false
+3   < 2 // false
+'8' < 4 // false
+Adicione o operador menor que às linhas indicadas para que as instruções de retorno façam sentido.*/
+
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+testLessThan(10);
