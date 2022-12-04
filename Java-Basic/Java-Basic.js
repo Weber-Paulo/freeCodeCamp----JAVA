@@ -1143,3 +1143,28 @@ function testLessThan(val) {
 }
 
 testLessThan(10);
+
+/*Comparação com o operador menor ou igual a
+O operador menor ou igual a ( <=) compara os valores de dois números. Se o número à esquerda for menor ou igual ao número à direita, ele retornará true. Se o número à esquerda for maior que o número à direita, ele retorna false. Como o operador de igualdade, o operador menor ou igual a converte tipos de dados.
+
+Exemplos
+
+4   <= 5 // true
+'7' <= 7 // true
+5   <= 5 // true
+3   <= 2 // false
+'8' <= 4 // false
+Adicione o operador menor ou igual às linhas indicadas para que as instruções de retorno façam sentido.*/
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
