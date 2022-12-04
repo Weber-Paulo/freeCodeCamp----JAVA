@@ -1168,3 +1168,94 @@ function testLessOrEqual(val) {
 }
 
 testLessOrEqual(10);
+
+/*Comparar com o operador lógico AND
+Às vezes, você precisará testar mais de uma coisa de cada vez. O operador lógico AND (&&) retornará true apenas se os operadores à esquerda e à direita forem verdadeiros.
+
+O mesmo efeito pode ser alcançado aninhando uma instrução if dentro de outro if:
+
+if (num > 5) {
+  if (num < 10) {
+    return "Yes";
+  }
+}
+return "No";
+só retornará Yes se num for maior que 5 e menor que 10. A mesma lógica pode ser escrita assim:
+
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No";
+Substitua as duas instruções if por uma declaração, usando o operador &&, que vai retornar a string Yes se val for menor ou igual a 50 e maior ou igual a 25. Caso contrário, retornará a string No.*/
+
+function testLogicalAnd(val) {
+  // Altere apenas o código abaixo desta linha
+
+  if (val <= 50 && val >= 25) {
+      return "Yes";
+      }
+
+  // Altere apenas o código acima desta linha
+  return "No";
+}
+
+testLogicalAnd(10);
+
+/*Comparar com o operador lógico OR
+O operador lógico OR (||) retorna true se qualquer um dos operandos for true. Caso contrário, retorna false.
+
+O operador lógico ou é composto por dois símbolos de pipe: (||). Normalmente, ele pode ser encontrado entre as teclas Backspace e Enter.
+
+O padrão abaixo deve parecer familiar aos pontos das passagens anteriores:
+
+if (num > 10) {
+  return "No";
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+retornará Yes apenas se num for entre 5 e 10 (5 e 10 incluídos). A mesma lógica pode ser escrita assim:
+
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
+Combine as duas instruções if em uma mesma instrução a qual retorna a string Outside se val não estiver entre 10 e 20, inclusos 10 e 20. Caso contrário, retorna a string Inside.*/
+
+function testLogicalOr(val) {
+  // Altere apenas o código abaixo desta linha
+
+  if (val > 20 || val < 10) {
+    return "Outside";
+   }
+
+  // Altere apenas o código acima desta linha
+  return "Inside";
+}
+
+testLogicalOr(15);
+
+/*Introduzir instruções else
+Quando uma condição para uma instrução if for verdadeira, o bloco de código seguinte será executado. E quando a condição for falsa? Normalmente, nada aconteceria. Com uma instrução else, um bloco de código alternativo pode ser executado.
+
+if (num > 10) {
+  return "Bigger than 10";
+} else {
+  return "10 or Less";
+}
+Combine as instruções if em uma única instrução if/else.*/
+function testElse(val) {
+  let result = "";
+  // Altere apenas o código abaixo desta linha
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {result = "5 or Smaller" }
+
+  
+  // Altere apenas o código acima desta linha
+  return result;
+}
+
+testElse(4);
