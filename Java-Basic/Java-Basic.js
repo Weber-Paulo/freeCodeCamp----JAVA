@@ -1259,3 +1259,25 @@ function testElse(val) {
 }
 
 testElse(4);
+
+/*Apresentando instruções Else If
+Se você tiver várias condições que precisam ser abordadas, poderá encadear ifinstruções com else ifinstruções.
+
+if (num > 15) {
+  return "Bigger than 15";
+} else if (num < 5) {
+  return "Smaller than 5";
+} else {
+  return "Between 5 and 15";
+}
+Converta a lógica para usar else ifinstruções.*/
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+  return "Between 5 and 10";
+}
+}
+testElseIf(7);
