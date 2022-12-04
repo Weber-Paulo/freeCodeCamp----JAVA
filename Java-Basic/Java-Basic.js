@@ -1062,3 +1062,31 @@ console.log(testStrictNotEqual(17));
 console.log(testStrictNotEqual("17"));
 console.log(testStrictNotEqual(12));
 console.log(testStrictNotEqual("bob"));
+
+/*Comparação com o operador maior que
+O operador maior que ( >) compara os valores de dois números. Se o número à esquerda for maior que o número à direita, ele retorna true. Caso contrário, ele retorna false.
+
+Como o operador de igualdade, o operador maior que converterá tipos de dados de valores durante a comparação.
+
+Exemplos
+
+5   >  3  // true
+7   > '3' // true
+2   >  3  // false
+'1' >  9  // false
+Adicione o operador maior que às linhas indicadas para que as instruções de retorno façam sentido.*/
+
+function testGreaterThan(val) {
+  if (val > 100) { // Altere esta linha
+    return "Over 100";
+  }
+
+  if (val > 10) { // Altere esta linha
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+testGreaterThan(10);
+console.log(testGreaterThan(10))
