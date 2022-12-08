@@ -1497,3 +1497,106 @@ default:
 }
 
 switchOfStuff(1);
+
+/*Lidar com várias opções idênticas em instruções switch
+Se a instrução break for omitida de uma instrução case de um switch, as instruções case seguintes serão executadas até que seja encontrado um break. Se você tem várias entradas com a mesma saída, você pode representá-las em uma instrução switch da seguinte forma:
+
+let result = "";
+switch (val) {
+  case 1:
+  case 2:
+  case 3:
+    result = "1, 2, or 3";
+    break;
+  case 4:
+    result = "4 alone";
+}
+Todos os casos para 1, 2 e 3 vão produzir o mesmo resultado.
+
+Escreva uma instrução para definir answer para os seguintes intervalos:
+1-3 - Low
+4-6 - Mid
+7-9 - High
+
+Observação: você precisará ter uma instrução case para cada número no intervalo.*/
+
+function sequentialSizes(val) {
+  let answer = "";
+  // Altere apenas o código abaixo desta linha
+switch(val) {
+  case 1:
+  case 2:
+  case 3:
+    answer = "Low";
+    break;
+  case 4:
+  case 5:
+  case 6:
+    answer = "Mid";
+    break;
+  case 7:
+  case 8:
+  case 9:
+    answer = "High";
+    break;
+}
+
+
+  // Altere apenas o código acima desta linha
+  return answer;
+}
+
+console.log(sequentialSizes(9));
+
+/*Substituir cadeias de if else por switch
+Se você tiver muitas opções para escolher, uma instrução switch pode ser mais fácil de escrever do que muitas instruções if/else if encadeadas. O seguinte:
+
+if (val === 1) {
+  answer = "a";
+} else if (val === 2) {
+  answer = "b";
+} else {
+  answer = "c";
+}
+pode ser substituído por:
+
+switch (val) {
+  case 1:
+    answer = "a";
+    break;
+  case 2:
+    answer = "b";
+    break;
+  default:
+    answer = "c";
+}
+Altere a cadeia de instruções if/else if por um comando switch.*/
+function chainToSwitch(val) {
+  let answer = "";
+  // Altere apenas o código abaixo desta linha
+
+switch(val) {
+  case "bob":
+    answer = "Marley";
+    break;
+  case 42:
+    answer = "The Answer";
+    break;
+  case 1:
+    answer= "There is no #1";
+    break;
+  case 99:
+    answer = "Missed me by this much!"
+    break;
+  case 7:
+    answer = "Ate Nine";
+    break;
+
+}
+
+
+  // Altere apenas o código acima desta linha
+  return answer;
+}
+
+console.log(chainToSwitch(99));
