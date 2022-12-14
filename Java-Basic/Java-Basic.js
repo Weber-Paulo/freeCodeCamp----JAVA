@@ -1865,7 +1865,7 @@ Como ele é um cachorro particularmente feliz, vamos mudar seu nome para o texto
 
 Atualize a propriedade name do objeto myDog. Vamos alterar o valor da propriedade name dele de Coder para Happy Coder. Você pode usar notação de ponto ou de colchetes.*/
 // Configuração
-const myDog = {
+const myDog3 = {
   "name": "Coder",
   "legs": 4,
   "tails": 1,
@@ -1873,5 +1873,5 @@ const myDog = {
 };
 
 // Altere apenas o código abaixo desta linha
-myDog.name = "Happy Coder";
-console.log(myDog)
+myDog3.name = "Happy Coder";
+console.log(myDog3)
