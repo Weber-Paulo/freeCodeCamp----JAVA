@@ -1776,15 +1776,15 @@ prop1val teria o valor val1 e prop2val teria o valor val2.
 
 Leia os valores de propriedade de testObj usando a notação de ponto. Defina a variável hatValue igual à propriedade hat do objeto e defina a variável shirtValue igual à propriedade shirt do objeto.*/
 // Configuração
-const testObj = {
+const testObj1 = {
   "hat": "ballcap",
   "shirt": "jersey",
   "shoes": "cleats"
 };
 
 // Altere apenas o código abaixo desta linha
-const hatValue = testObj.hat;      // Altere esta linha
-const shirtValue = testObj.shirt;    // Altere esta linha
+const hatValue = testObj1.hat;      // Altere esta linha
+const shirtValue = testObj1.shirt;    // Altere esta linha
 
 /*Acessar propriedades de objeto com notação de colchetes
 A segunda forma para acessar as propriedades de um objeto é a notação de colchetes ([]). Se a propriedade do objeto que você está tentando acessar possui um espaço no seu nome, você precisará usar a notação de colchetes.
@@ -1809,15 +1809,15 @@ Note que os nomes das propriedades com espaços neles precisam estar entre aspas
 Leia os valores das propriedades an entree e the drink de testObj usando notação de colchetes e atribua-os a entreeValue e drinkValue respectivamente.*/
 
 // Configuração
-const testObj = {
+const testObj2 = {
   "an entree": "hamburger",
   "my side": "veggies",
   "the drink": "water"
 };
 
 // Altere apenas o código abaixo desta linha
-const entreeValue = testObj["an entree"];   // Altere esta linha
-const drinkValue = testObj["the drink"];    // Altere esta linha
+const entreeValue = testObj2["an entree"];   // Altere esta linha
+const drinkValue = testObj2["the drink"];    // Altere esta linha
 
 /*Acessar propriedades de objetos com variáveis
 Outro uso de notação de colchetes em objetos é para acessar a propriedade a qual está armazenada como o valor de uma variável. Isso pode ser muito útil para iterar através das propriedades de um objeto ou quando acessando uma tabela de pesquisa.
@@ -1839,7 +1839,7 @@ Observe que não usamos aspas em torno do nome da variável ao usá-la para aces
 
 Defina a variável playerNumber para ser 16. Então, use a variável para procurar o nome do jogador e atribuí-la a player.*/
 // Configuração
-const testObj = {
+const testObj3 = {
   12: "Namath",
   16: "Montana",
   19: "Unitas"
@@ -1847,5 +1847,5 @@ const testObj = {
 
 // Altere apenas o código abaixo desta linha
 const playerNumber = 16;  // Altere esta linha
-const player = testObj[playerNumber];   // Altere esta linha
-console.log(player)
+const player = testObj3[playerNumber];   // Altere esta linha
+console.log(player);
