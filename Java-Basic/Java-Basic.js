@@ -2248,3 +2248,10 @@ for (let i = 0; i < 5; i++) {
 ourArray agora terá o valor de [0, 1, 2, 3, 4].
 
 Use o laço for para adicionar os valores de 1 até 5 dentro de myArray.*/
+// Configuração
+const myArray13 = [];
+for (let i = 1; i <= 5; i++) {
+  myArray13.push(i);
+}
+console.log(myArray13)
+// Altere apenas o código abaixo desta linha
