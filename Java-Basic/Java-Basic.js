@@ -2315,8 +2315,38 @@ Declare e inicialize uma variável totalpara 0. Use um forloop para adicionar o 
 var myArr = [ 2, 3, 4, 5, 6];
 var total = 0
 
-for (var i = 0; i < myArr.length; i++) {
-   total += myArr[i];
+for (var i2 = 0; i2 < myArr.length; i2++) {
+   total += myArr[i2];
 }
 console.log(total)
 // Only change code below this line
+
+/*Aninhar laços por
+Se você possui um array multidimensional, você pode usar a mesma lógica no ponto de passagem anterior para iterar através de arrays e de qualquer sub-array. Exemplo:
+
+const arr = [
+  [1, 2], [3, 4], [5, 6]
+];
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
+}
+Isso exibe no console cada subelemento dentro de arr, um de cada vez. Note que para o laço interno, nós estamos verificando a propriedade .lengthde arr[i], desde que arr[i]também seja um array.
+
+Modifique a função multiplyAllpara que retorne o produto de todos os números nos sub-arrays de arr.*/
+function multiplyAll(arr) {
+  let product = 1;
+  // Altere apenas o código abaixo desta linha
+for (let i = 0; i < arr.length; i++) {
+    const subArray = arr[i];
+    for (let j = 0; j < subArray.length; j++) {
+      product *= subArray[j];
+    }
+  }
+  // Altere apenas o código acima desta linha
+  return product;
+}
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
