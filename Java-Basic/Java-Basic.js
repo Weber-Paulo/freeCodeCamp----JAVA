@@ -2299,3 +2299,24 @@ for (let i = 9; i >= 1; i -= 2) {
 }
 console.log(myArray16)
 // Altere apenas o código abaixo desta linha
+
+/*Iterar através de uma matriz com um loop For
+Uma tarefa comum em JavaScript é iterar o conteúdo de um array. Uma maneira de fazer isso é com um forloop. Este código enviará cada elemento do array arrpara o console:
+
+const arr = [10, 9, 8, 7, 6];
+
+for (let i = 0; i < arr.length; i++) {
+   console.log(arr[i]);
+}
+Lembre-se de que os arrays têm indexação baseada em zero, o que significa que o último índice do array é length - 1. Nossa condição para este loop é i < arr.length, que interrompe o loop quando ié igual a length. Neste caso, a última iteração é , por exemplo i === 4, quando ise torna igual a arr.length - 1e gera saída 6para o console. Em seguida , iaumenta para 5, e o loop termina porque i < arr.lengthé false.
+
+Declare e inicialize uma variável totalpara 0. Use um forloop para adicionar o valor de cada elemento da myArrmatriz a total.*/
+// Setup
+var myArr = [ 2, 3, 4, 5, 6];
+var total = 0
+
+for (var i = 0; i < myArr.length; i++) {
+   total += myArr[i];
+}
+console.log(total)
+// Only change code below this line
