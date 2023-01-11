@@ -2350,3 +2350,45 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+/*Iterar com laços do...while em JavaScript
+O próximo tipo de laço que você aprenderá é chamado de laço do...while. O laço do...whileé chamado assim porque primeiro fará algo ( do) ou executará algo uma vez dentro do bloco de código, não importando o que aconteça. Em seguida, continue a executar o laço enquanto ( while) a condição para true.
+
+const ourArray = [];
+let i = 0;
+
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+O exemplo acima se comporta de forma semelhante a outros tipos de laços, e o array resultante parecerá com [0, 1, 2, 3, 4]. No entanto, o que torna o laço do...whilediferente de outros laços é como ele se comporta quando uma condição falha na primeira verificação. Vamos ver isso na prática. Aqui está um laço comum whileque rodará o código no laço enquanto i < 5:
+
+const ourArray = []; 
+let i = 5;
+
+while (i < 5) {
+  ourArray.push(i);
+  i++;
+}
+Nesse exemplo, inicializamos o valor de ourArraycomo um array vazio e o valor de isendo 5. Quando executamos o laço while, a condição é igual a falseporque inão é menor que 5, portanto nós não executamos o código dentro do laço. O resultado é que ourArrayterminará sem valores adicionados a ele, e ainda se parecerá com []quando todas as linhas do código no exemplo acima forem completamente executadas. Agora, dê uma senti no laço do...while:
+
+const ourArray = []; 
+let i = 5;
+
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+Nesse caso, nós inicializamos o valor de ipara 5, assim como fizemos com o laço while. Quando chegarmos na próxima linha, não há condição a ser vigilante, então nós vamos ao código dentro das chaves e executamos. Nós adicionaremos um único elemento ao array e então incrementamos iantes de chegarmos à verificação da condição. Quando nós finalmente temos o resultado da condição i < 5na última linha, nós notamos que iagora é 6, o que não inclui a verificação da condição, então nós saímos do laço e terminamos. Ao final do exemplo acima, o valor de ourArrayé [5]. Essencialmente, um laço do...whilegarante que o código dentro do laço será executado pelo menos uma vez. Vamos tentar fazer um laço do...whileoperando inserindo valores em um array.
+
+Altere o laço whileno código para um laço do...whilepara que o laço adicione apenas o número 10no myArraye iserá igual a 11quando seu código terminar de rodar.*/
+
+// Configuração
+const myArray = [];
+let i = 10;
+
+// Altere apenas o código abaixo desta linha
+do {
+  myArray.push(i);
+  i++;
+} while (i < 5)
