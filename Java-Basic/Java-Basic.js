@@ -2392,3 +2392,37 @@ do {
   myArray.push(i);
   i++;
 } while (i < 5)
+
+/*Substituir loops usando recursão
+Recursão é o conceito de que uma função pode ser expressa em termos de si mesma. Para ajudar a entender isso, comece pensando na seguinte tarefa: multiplique os primeiros nelementos de uma matriz para criar o produto desses elementos. Usando um forloop, você poderia fazer isso:
+
+  function multiply(arr, n) {
+    let product = 1;
+    for (let i = 0; i < n; i++) {
+      product *= arr[i];
+    }
+    return product;
+  }
+No entanto, observe que multiply(arr, n) == multiply(arr, n - 1) * arr[n - 1]. Isso significa que você pode reescrever multiplyem termos de si mesmo e nunca precisar usar um loop.
+
+  function multiply(arr, n) {
+    if (n <= 0) {
+      return 1;
+    } else {
+      return multiply(arr, n - 1) * arr[n - 1];
+    }
+  }
+A versão recursiva de multiplyquebra assim. No caso base , onde n <= 0, retorna 1. Para valores maiores de n, chama a si mesmo, mas com n - 1. Essa chamada de função é avaliada da mesma forma, chamando multiplynovamente até n <= 0. Neste ponto, todas as funções podem retornar e o original multiplyretorna a resposta.
+
+Nota: As funções recursivas devem ter um caso base quando retornam sem chamar a função novamente (neste exemplo, quando n <= 0), caso contrário, nunca poderão terminar a execução.
+
+Escreva uma função recursiva, sum(arr, n), que retorne a soma dos primeiros nelementos de um array arr.*/
+function sum(arr, n) {
+  // Only change code below this line
+if (n <= 0) {
+      return 0;
+    } else {
+      return sum(arr, n - 1) + arr[n - 1];
+    }
+  // Only change code above this line
+}
