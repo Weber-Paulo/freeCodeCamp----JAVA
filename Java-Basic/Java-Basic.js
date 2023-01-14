@@ -2426,3 +2426,20 @@ if (n <= 0) {
     }
   // Only change code above this line
 }
+
+/*Pesquisar perfil
+Temos um array de objetos representando pessoas diferentes em nossas listas de contatos.
+
+Uma função lookUpProfile, que recebe namee uma propriedade ( prop) como argumentos, foi pré-escrita para você.
+
+A função deve verificar se nameé o firstName(primeiro nome) de um contato e se uma propriedade passada ( prop) é uma propriedade daquele contato.
+
+Se ambos são verdadeiros, então retorne o "valor" daquela propriedade.
+
+Se namenão corresponder a nenhum dos contatos, então retorne a string No such contact.
+
+Se propnão corresponder a nenhuma propriedade válida de um contato encontrado para coincidir com nameentão retorne a string No such property.*/
+
+
+
+  
