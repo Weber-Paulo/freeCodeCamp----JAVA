@@ -2484,4 +2484,24 @@ function lookUpProfile(name, prop) {
 
 lookUpProfile("Akira", "likes");
 
+/*Gerar frações aleatórias com JavaScript
+Números aleatórios são úteis para criar comportamento aleatório.
+
+JavaScript tem a função Math.random()que gera um número decimal aleatório entre 0(incluso) e 1(excluso). Assim, Math.random()pode retornar um 0mas nunca retornará 1.
+
+Observação: como ao armazenar valores com operador de recepção , todas as chamadas de funções serão resolvidas antes de executar o return, para que possamos dar ao returnvalor da função Math.random().
+
+Altere randomFractionpara retornar um número aleatório ao substituído de retornar 0.*/
+
+function randomFraction() {
+
+  // Altere apenas o código abaixo desta linha
+
+  Math.random();
+  return Math.random();
+
+  // Altere apenas o código acima desta linha
+}
+console.log(Math.random)
+
   
