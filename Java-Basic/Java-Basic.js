@@ -2417,15 +2417,8 @@ A versão recursiva de multiplyquebra assim. No caso base , onde n <= 0, retorna
 Nota: As funções recursivas devem ter um caso base quando retornam sem chamar a função novamente (neste exemplo, quando n <= 0), caso contrário, nunca poderão terminar a execução.
 
 Escreva uma função recursiva, sum(arr, n), que retorne a soma dos primeiros nelementos de um array arr.*/
-function1 sum(arr, n) {
-  // Only change code below this line
-if (n <= 0) {
-      return 0;
-    } else {
-      return sum(arr, n - 1) + arr[n - 1];
-    }
-  // Only change code above this line
-}
+
+
 
 /*Pesquisar perfil
 Temos um array de objetos representando pessoas diferentes em nossas listas de contatos.
@@ -2541,3 +2534,19 @@ function randomRange(myMin, myMax) {
   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
   // Altere apenas o código acima desta linha
 }
+
+/*Usar a função parseInt
+A função parseInt()analisa uma string e retorna um inteiro. Exemplo:
+
+const a = parseInt("007");
+A função acima converte uma string 007para o inteiro 7. Se o primeiro caractere na string não pode ser convertido em um número, então ele retorna NaN.
+
+Use parseInt()na função convertToIntegerpara que ela converta uma string de entrada strem um inteiro e retorne.*/
+
+function convertToInteger(str) {
+  return parseInt(str)
+  }
+  
+  convertToInteger("56");
+
+  
