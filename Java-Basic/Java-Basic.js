@@ -2549,4 +2549,53 @@ function convertToInteger(str) {
   
   convertToInteger("56");
 
+  console.log(convertToInteger("JamesBond"))
+
+  /*Usar a função parseInt com um radix
+A função parseInt()analisa uma string e retorna um inteiro. É preciso um segundo argumento para o radix, que especifica a base do número na string. O radix pode ser um inteiro entre 2 e 36.
+
+A chamada da função se parece com:
+
+parseInt(string, radix);
+Exemplo:
+
+const a = parseInt("11", 2);
+A variável radix diz que 11está no sistema binário, ou base 2. Esse exemplo converte uma string 11para um inteiro 3.
+
+Use parseInt()na função convertToIntegerpara que ela converta um número binário em um inteiro e retorne.*/
+
+function convertToInteger(str) {
+  return parseInt(str, 2)
+  }
   
+  convertToInteger("10011");
+
+  console.log(convertToInteger("James"))
+
+  /*Usar o operador condicional (ternário)
+O operador condicional , também chamado de operador ternário , pode ser usado como uma expressão if-else de uma linha.
+
+A sintaxe é a ? b : c, onde aé a condição, bé o código executado quando a condição retorna truee cé o código executado quando a condição retorna false.
+
+A função a seguir usa a instrução if/elsepara verificar uma condição:
+
+function findGreater(a, b) {
+  if(a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater or equal";
+  }
+}
+Isto pode ser reescrito usando o operador condicional:
+
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater or equal";
+}
+Use o operador condicional na função checkEqualpara verificar se dois números são iguais ou não. A função deve retornar ou a string Equalou a string Not Equal.*/
+
+function checkEqual(a, b) {
+  return a === b ? "Equal" : "Not Equal";
+  }
+  
+  checkEqual(1, 2);
