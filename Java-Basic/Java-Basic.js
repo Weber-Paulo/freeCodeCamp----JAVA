@@ -2384,12 +2384,12 @@ Nesse caso, nós inicializamos o valor de ipara 5, assim como fizemos com o laç
 Altere o laço whileno código para um laço do...whilepara que o laço adicione apenas o número 10no myArraye iserá igual a 11quando seu código terminar de rodar.*/
 
 // Configuração
-const myArray = [];
-let i = 10;
+const myArray22 = [];
+let i20 = 10;
 
 // Altere apenas o código abaixo desta linha
 do {
-  myArray.push(i);
+  myArray22.push(i);
   i++;
 } while (i < 5)
 
@@ -2417,7 +2417,7 @@ A versão recursiva de multiplyquebra assim. No caso base , onde n <= 0, retorna
 Nota: As funções recursivas devem ter um caso base quando retornam sem chamar a função novamente (neste exemplo, quando n <= 0), caso contrário, nunca poderão terminar a execução.
 
 Escreva uma função recursiva, sum(arr, n), que retorne a soma dos primeiros nelementos de um array arr.*/
-function sum(arr, n) {
+function1 sum(arr, n) {
   // Only change code below this line
 if (n <= 0) {
       return 0;
@@ -2504,4 +2504,24 @@ function randomFraction() {
 }
 console.log(Math.random)
 
-  
+  /*Gerar números inteiros aleatórios com JavaScript
+É ótimo podermos gerar números decimais aleatórios, mas ainda é mais útil se usarmos isso para gerar números inteiros aleatórios.
+
+Use Math.random()para gerar um decimal aleatório.
+Múltiplo ou decimal aleatório por 20.
+Use outra função, Math.floor()para arredondar o número para baixo para o número inteiro mais próximo.
+Lembre-se de que Math.random()pode nunca retornar um 1e, por estarmos arredondando, é impossível também receber 20. Essa técnica nos dará um número inteiro entre 0e 19.
+
+Juntando tudo, é assim que nosso código se parece:
+
+Math.floor(Math.random() * 20);
+Nós estamos chamando Math.random(), multiplicando o resultado por 20, e em seguida passando o valor para a função Math.floor()para arredondar o valor para o número inteiro mais próximo abaixo.
+
+Use essa técnica para gerar e retornar um número inteiro aleatório entre 0e 9.*/
+
+function randomWholeNum() {
+
+  // Altere apenas o código abaixo desta linha
+
+  return Math.floor(Math.random() * 10);
+}
